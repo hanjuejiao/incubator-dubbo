@@ -44,7 +44,7 @@ public class MockChannel implements Channel {
 
     @Override
     public boolean isConnected() {
-        return false;
+        return !closed;
     }
 
     @Override
